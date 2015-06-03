@@ -37,7 +37,7 @@ Meteor.loginWithSpotify(options, function(accessToken) {
   console.log(accessToken);
 });
 ```
-The user's `services.spotify` and `profile` fields will be populated on success.
+The user's `services.spotify` and `profile` fields will be populated on success. If you just want the access token without user accounts being involved, check out [xinranxiao:spotify](https://github.com/xinranxiao/meteor-spotify).
 
 ## Contribution
 
