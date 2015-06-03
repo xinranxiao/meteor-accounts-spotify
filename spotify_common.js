@@ -1,0 +1,1 @@
+Accounts.oauth.registerService('spotify');

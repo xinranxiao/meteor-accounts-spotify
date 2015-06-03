@@ -8,9 +8,12 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
+
   api.use('accounts-base', ['client', 'server']);
   api.imply('accounts-base', ['client', 'server']);
   api.use('accounts-oauth', ['client', 'server']);
+
+  api.use('underscore', ['client', 'server']);
 
   api.use('xinranxiao:spotify@1.0.0', ['client', 'server']);
 
