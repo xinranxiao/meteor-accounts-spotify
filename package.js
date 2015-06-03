@@ -15,7 +15,7 @@ Package.onUse(function(api) {
 
   api.use('underscore', ['client', 'server']);
 
-  api.use('xinranxiao:spotify@1.0.0', ['client', 'server']);
+  api.use('xinranxiao:spotify@1.0.1', ['client', 'server']);
 
   api.addFiles(['spotify_login_button.css'], 'client');
   api.addFiles('spotify_common.js', ['client', 'server']);
