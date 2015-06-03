@@ -2,10 +2,7 @@
 A meteor package for Spotify's login service.
 
 ## Installation
-* `meteor add accounts-base`
-* `meteor add accounts-oauth`
-* `meteor add service-configuration`
-* `meteor add xinranxiao:spotify`
+* `meteor add xinranxiao:accounts-spotify`
 
 ## Usage
 
