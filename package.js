@@ -8,11 +8,14 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
-  api.addFiles('accounts-spotify.js');
-});
+  api.use('accounts-base', ['client', 'server']);
+  api.imply('accounts-base', ['client', 'server']);
+  api.use('accounts-oauth', ['client', 'server']);
 
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('xinranxiao:accounts-spotify');
-  api.addFiles('accounts-spotify-tests.js');
+  api.use('xinranxiao:spotify@0.0.1', ['client', 'server']);
+
+  api.addFiles(['spotify_login_button.css'], 'client');
+  api.addFiles('spotify_common.js', ['client', 'server']);
+  api.addFiles('spotify_server.js', 'server');
+  api.addFiles('spotify_client.js', 'client');
 });
