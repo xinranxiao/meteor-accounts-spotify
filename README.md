@@ -1,5 +1,5 @@
 # meteor-accounts-spotify
-A meteor package for Spotify's login service.
+An updated and maintained meteor package for Spotify's login service.
 
 ## Installation
 * `meteor add xinranxiao:accounts-spotify`
@@ -15,7 +15,7 @@ ServiceConfiguration.configurations.update(
   { "service": "spotify" },
   {
     $set: {
-      "clientId": "<your clientId",
+      "clientId": "<your clientId>",
       "secret": "<your secret>"
     }
   },
@@ -39,3 +39,6 @@ The user's `services.spotify` and `profile` fields will be populated on success.
 ## Contribution
 
 If you have any problems with or suggestions for this package, please create a new issue.
+
+TODO
+- allow specification of the fields to use for the profile.
