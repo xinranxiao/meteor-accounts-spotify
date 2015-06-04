@@ -1,6 +1,6 @@
 Package.describe({
   name: 'xinranxiao:accounts-spotify',
-  version: '1.0.0',
+  version: '1.0.1',
   summary: 'An updated and maintained meteor package for Spotify\'s login service',
   git: 'https://github.com/xinranxiao/meteor-accounts-spotify.git',
   documentation: 'README.md'
