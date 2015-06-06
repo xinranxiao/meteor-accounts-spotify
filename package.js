@@ -15,6 +15,7 @@ Package.onUse(function(api) {
   api.use('service-configuration', ['server']);
   api.use('xinranxiao:spotify@1.0.2', ['client', 'server']);
 
+  api.imply('xinranxiao:spotify@1.0.2', ['client', 'server']);
   api.imply('accounts-base', ['client', 'server']);
   api.imply('service-configuration', ['server']);
 

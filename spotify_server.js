@@ -8,6 +8,6 @@ Accounts.addAutopublishFields({
   forOtherUsers: _.map(
     // even with autopublish, no legitimate web app should be
     // publishing all users' emails
-    _.without(Spotify.whitelistedFields, 'email'),
+    _.without(Spotify.whitelistedFields, 'email', 'id', 'uri'),
     function (subfield) { return 'services.spotify.' + subfield; })
 });
