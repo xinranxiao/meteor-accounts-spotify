@@ -30,8 +30,8 @@ var options = {
   showDialog: true, // Whether or not to force the user to approve the app again if they’ve already done so.
   requestPermissions: ['user-read-email'] // Spotify access scopes.
 };
-Meteor.loginWithSpotify(options, function(accessToken) {
-  console.log(accessToken);
+Meteor.loginWithSpotify(options, function(err) {
+  console.log(err || "No error");
 });
 ```
 The user's `services.spotify` and `profile` fields will be populated on success. If you just want the access token without user accounts being involved, check out [xinranxiao:spotify](https://github.com/xinranxiao/meteor-spotify).
